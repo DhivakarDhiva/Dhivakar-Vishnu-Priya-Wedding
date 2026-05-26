@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dhivakar & Vishnu Priya — Wedding Invitation</title>
+<title>Dhivakar &amp; Vishnu Priya — Wedding Invitation</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -14,12 +14,12 @@
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--deep);color:var(--tm);font-family:'Cormorant Garamond',serif;overflow-x:hidden;min-height:100vh}
- 
+
 /* canvas petals */
 #cvs{position:fixed;inset:0;pointer-events:none;z-index:0}
- 
+
 .pg{position:relative;z-index:1}
- 
+
 /* ──────────────────────────────
    HERO
 ────────────────────────────── */
@@ -29,13 +29,13 @@ body{background:var(--deep);color:var(--tm);font-family:'Cormorant Garamond',ser
   text-align:center;padding:70px 20px 110px;position:relative;
   background:radial-gradient(ellipse 80% 60% at 50% 42%,rgba(201,168,76,0.09) 0%,transparent 65%);
 }
- 
+
 /* corner filigree */
 .crn{position:absolute;width:110px;height:110px;opacity:.25;pointer-events:none}
 .crn svg{width:100%;height:100%}
 .tl{top:18px;left:18px} .tr{top:18px;right:18px;transform:scaleX(-1)}
 .bl{bottom:18px;left:18px;transform:scaleY(-1)} .br{bottom:18px;right:18px;transform:scale(-1,-1)}
- 
+
 /* together */
 .together{
   font-family:'Cormorant Garamond',serif;font-style:italic;
@@ -43,13 +43,13 @@ body{background:var(--deep);color:var(--tm);font-family:'Cormorant Garamond',ser
   letter-spacing:.1em;margin-bottom:14px;
   opacity:0;animation:fup .9s ease .15s forwards
 }
- 
+
 /* names */
 .names-block{opacity:0;animation:fup 1s ease .4s forwards}
 .n1{font-family:'Great Vibes',cursive;font-size:clamp(4.5rem,14vw,9.5rem);color:var(--ivory);line-height:1.05;display:block}
 .amp{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.8rem,5vw,3.2rem);color:var(--gold);display:block;line-height:1.3;margin:4px 0}
 .n2{font-family:'Great Vibes',cursive;font-size:clamp(3.5rem,11vw,8rem);color:var(--ivory);line-height:1.05;display:block}
- 
+
 /* invite copy */
 .invite{
   font-family:'Cormorant Garamond',serif;font-style:italic;
@@ -57,7 +57,7 @@ body{background:var(--deep);color:var(--tm);font-family:'Cormorant Garamond',ser
   max-width:460px;margin:22px auto 0;
   opacity:0;animation:fup .9s ease .8s forwards
 }
- 
+
 /* gold rule */
 .rule{
   display:flex;align-items:center;gap:14px;max-width:300px;margin:32px auto 28px;
@@ -65,13 +65,13 @@ body{background:var(--deep);color:var(--tm);font-family:'Cormorant Garamond',ser
 }
 .rule-line{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
 .rule-gem{font-size:1rem;color:var(--gold)}
- 
+
 /* ── BIG CTA BUTTONS ── */
 .cta-group{
   display:flex;flex-direction:column;align-items:center;gap:14px;
   opacity:0;animation:fup .9s ease 1.2s forwards
 }
- 
+
 .btn-loc{
   display:inline-flex;align-items:center;gap:11px;
   padding:16px 40px;
@@ -84,7 +84,7 @@ body{background:var(--deep);color:var(--tm);font-family:'Cormorant Garamond',ser
 }
 .btn-loc:hover{transform:translateY(-3px);box-shadow:0 10px 36px rgba(201,168,76,.45)}
 .btn-loc svg{width:17px;height:17px;flex-shrink:0}
- 
+
 .btn-sched{
   display:inline-flex;align-items:center;gap:9px;
   padding:11px 30px;border:1px solid rgba(201,168,76,.4);
@@ -94,7 +94,7 @@ body{background:var(--deep);color:var(--tm);font-family:'Cormorant Garamond',ser
   transition:border-color .25s,color .25s
 }
 .btn-sched:hover{border-color:var(--gold);color:var(--gold)}
- 
+
 /* scroll cue */
 .scue{
   position:absolute;bottom:26px;left:50%;transform:translateX(-50%);
@@ -104,16 +104,16 @@ body{background:var(--deep);color:var(--tm);font-family:'Cormorant Garamond',ser
   letter-spacing:.42em;text-transform:uppercase
 }
 .sarr{width:1px;height:32px;background:linear-gradient(to bottom,var(--gold),transparent);animation:ab 1.8s ease-in-out infinite}
- 
+
 /* ──────────────────────────────
    SCHEDULE SECTION
 ────────────────────────────── */
 .sched-sec{padding:80px 20px 60px;max-width:680px;margin:0 auto;text-align:center}
- 
+
 .eyebrow{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.48em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
 .sec-h{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3rem);font-weight:300;color:var(--ivory);margin-bottom:12px}
 .sec-p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.05rem;color:var(--ts);line-height:1.75;margin-bottom:50px}
- 
+
 /* timeline */
 .tl-wrap{display:flex;flex-direction:column}
 .tl-row{display:grid;grid-template-columns:108px 1px 1fr;gap:0 20px;min-height:96px}
@@ -129,7 +129,7 @@ body{background:var(--deep);color:var(--tm);font-family:'Cormorant Garamond',ser
 .tl-ename{font-family:'Cormorant Garamond',serif;font-size:1.28rem;color:var(--ivory);line-height:1.3;margin-bottom:5px}
 .tl-edesc{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.93rem;color:var(--ts);line-height:1.6}
 .tl-edesc strong{color:var(--tm);font-weight:400}
- 
+
 /* notice strip */
 .notice{
   margin:44px auto 0;max-width:660px;
@@ -139,16 +139,16 @@ body{background:var(--deep);color:var(--tm);font-family:'Cormorant Garamond',ser
 .notice svg{flex-shrink:0;color:var(--gold);margin-top:3px}
 .notice p{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--tm);line-height:1.65}
 .notice strong{color:var(--gold-l);font-weight:400}
- 
+
 /* ──────────────────────────────
    VENUES SECTION
 ────────────────────────────── */
 .venues-sec{padding:70px 20px 100px;max-width:1040px;margin:0 auto;scroll-margin-top:24px}
 .venues-hdr{text-align:center;margin-bottom:48px}
- 
+
 /* grid: 2 cols, 3rd card spans full */
 .vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:28px}
- 
+
 /* card */
 .vc{background:var(--card);border:1px solid rgba(201,168,76,.18);position:relative;overflow:hidden;transition:border-color .3s,transform .3s}
 .vc:hover{border-color:rgba(201,168,76,.48);transform:translateY(-4px)}
@@ -159,27 +159,27 @@ body{background:var(--deep);color:var(--tm);font-family:'Cormorant Garamond',ser
   letter-spacing:.08em;border:1px solid var(--gold-d);border-radius:100px;padding:3px 11px
 }
 .vc-in{padding:28px 28px 32px}
- 
+
 .vc-tag{
   display:inline-flex;align-items:center;gap:7px;
   font-family:'Cinzel',serif;font-size:.56rem;letter-spacing:.42em;text-transform:uppercase;
   color:var(--gold);margin-bottom:18px;padding:4px 14px;border:1px solid var(--gold-d);border-radius:100px
 }
 .tdot{width:5px;height:5px;border-radius:50%;background:var(--gold);opacity:.6}
- 
+
 .vic{width:50px;height:50px;border-radius:50%;background:rgba(201,168,76,.08);display:flex;align-items:center;justify-content:center;color:var(--gold);margin-bottom:15px}
 .vic svg{width:24px;height:24px}
- 
+
 .vc-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,3.5vw,1.9rem);font-weight:300;color:var(--ivory);line-height:1.25;margin-bottom:4px}
 .vc-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.96rem;color:var(--gold-l);margin-bottom:20px}
 .vc-rule{height:1px;background:linear-gradient(90deg,var(--gold-d),transparent);margin-bottom:18px}
- 
+
 .ir{display:flex;align-items:flex-start;gap:11px;margin-bottom:12px}
 .ir-ic{flex-shrink:0;width:27px;height:27px;border-radius:50%;background:rgba(201,168,76,.08);display:flex;align-items:center;justify-content:center;color:var(--gold);margin-top:2px}
 .ir-ic svg{width:12px;height:12px}
 .ir-t{font-family:'Cormorant Garamond',serif;font-size:.96rem;color:var(--tm);line-height:1.6}
 .ir-lbl{display:block;font-family:'Cinzel',serif;font-size:.5rem;letter-spacing:.4em;text-transform:uppercase;color:var(--tmu);margin-bottom:2px}
- 
+
 /* map button — BIG & CLEAR */
 .mbutton{
   display:flex;align-items:center;justify-content:center;gap:10px;
@@ -199,10 +199,10 @@ body{background:var(--deep);color:var(--tm);font-family:'Cormorant Garamond',ser
 .mbutton:hover{color:var(--deep);border-color:var(--gold)}
 .mbutton>*{position:relative;z-index:1}
 .mhint{text-align:center;margin-top:7px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.78rem;color:var(--tmu)}
- 
+
 /* span full row for card 3 */
 .span-full{grid-column:1/-1;max-width:580px;margin:0 auto;width:100%}
- 
+
 /* ──────────────────────────────
    FOOTER
 ────────────────────────────── */
@@ -211,18 +211,298 @@ body{background:var(--deep);color:var(--tm);font-family:'Cormorant Garamond',ser
 .f-script{font-family:'Great Vibes',cursive;font-size:clamp(2rem,6vw,3.2rem);color:var(--gold-l);margin:8px 0}
 .f-msg{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--ts);line-height:1.8;max-width:360px;margin:0 auto}
 .f-copy{margin-top:26px;font-family:'Cinzel',serif;font-size:.5rem;letter-spacing:.4em;color:var(--tmu);text-transform:uppercase}
- 
+
 /* reveal */
 .rv{opacity:0;transform:translateY(22px);transition:opacity .75s ease,transform .75s ease}
 .rv.in{opacity:1;transform:none}
 /* when jumping via anchor, instantly show venues section children */
 .venues-sec .rv{transition-delay:0s!important}
- 
+
 /* keyframes */
 @keyframes fup{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fin{from{opacity:0}to{opacity:1}}
 @keyframes ab{0%,100%{transform:scaleY(1);opacity:.4}50%{transform:scaleY(1.28);opacity:1}}
 @keyframes hb{0%,100%{transform:scale(1)}50%{transform:scale(1.14)}}
- 
-@media(max
- 
+
+@media(max-width:580px){
+  .crn{width:72px;height:72px}
+  .tl-row{grid-template-columns:82px 1px 1fr}
+  .vc-in{padding:20px 16px 24px}
+}
+</style>
+</head>
+<body>
+<canvas id="cvs"></canvas>
+<div class="pg">
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="top">
+
+  <!-- corners -->
+  <div class="crn tl"><svg viewBox="0 0 90 90" fill="none"><path d="M5 5L5 42M5 5L42 5" stroke="#c9a84c" stroke-width="1.1"/><circle cx="5" cy="5" r="3" fill="#c9a84c" opacity=".7"/><path d="M24 5C5 5 5 24 5 42" stroke="#c9a84c" stroke-width=".5" opacity=".22"/><circle cx="20" cy="18" r="1.3" fill="#c9a84c" opacity=".5"/><circle cx="17" cy="21" r="1.1" fill="#c9a84c" opacity=".4"/><circle cx="23" cy="21" r="1.1" fill="#c9a84c" opacity=".4"/><circle cx="20" cy="24" r="1.3" fill="#c9a84c" opacity=".5"/><circle cx="20" cy="21" r="2.2" fill="#c9a84c" opacity=".3"/></svg></div>
+  <div class="crn tr"><svg viewBox="0 0 90 90" fill="none"><path d="M5 5L5 42M5 5L42 5" stroke="#c9a84c" stroke-width="1.1"/><circle cx="5" cy="5" r="3" fill="#c9a84c" opacity=".7"/><path d="M24 5C5 5 5 24 5 42" stroke="#c9a84c" stroke-width=".5" opacity=".22"/><circle cx="20" cy="18" r="1.3" fill="#c9a84c" opacity=".5"/><circle cx="17" cy="21" r="1.1" fill="#c9a84c" opacity=".4"/><circle cx="23" cy="21" r="1.1" fill="#c9a84c" opacity=".4"/><circle cx="20" cy="24" r="1.3" fill="#c9a84c" opacity=".5"/><circle cx="20" cy="21" r="2.2" fill="#c9a84c" opacity=".3"/></svg></div>
+  <div class="crn bl"><svg viewBox="0 0 90 90" fill="none"><path d="M5 5L5 42M5 5L42 5" stroke="#c9a84c" stroke-width="1.1"/><circle cx="5" cy="5" r="3" fill="#c9a84c" opacity=".7"/><path d="M24 5C5 5 5 24 5 42" stroke="#c9a84c" stroke-width=".5" opacity=".22"/><circle cx="20" cy="18" r="1.3" fill="#c9a84c" opacity=".5"/><circle cx="17" cy="21" r="1.1" fill="#c9a84c" opacity=".4"/><circle cx="23" cy="21" r="1.1" fill="#c9a84c" opacity=".4"/><circle cx="20" cy="24" r="1.3" fill="#c9a84c" opacity=".5"/><circle cx="20" cy="21" r="2.2" fill="#c9a84c" opacity=".3"/></svg></div>
+  <div class="crn br"><svg viewBox="0 0 90 90" fill="none"><path d="M5 5L5 42M5 5L42 5" stroke="#c9a84c" stroke-width="1.1"/><circle cx="5" cy="5" r="3" fill="#c9a84c" opacity=".7"/><path d="M24 5C5 5 5 24 5 42" stroke="#c9a84c" stroke-width=".5" opacity=".22"/><circle cx="20" cy="18" r="1.3" fill="#c9a84c" opacity=".5"/><circle cx="17" cy="21" r="1.1" fill="#c9a84c" opacity=".4"/><circle cx="23" cy="21" r="1.1" fill="#c9a84c" opacity=".4"/><circle cx="20" cy="24" r="1.3" fill="#c9a84c" opacity=".5"/><circle cx="20" cy="21" r="2.2" fill="#c9a84c" opacity=".3"/></svg></div>
+
+  <p class="together">Together with their families</p>
+
+  <div class="names-block">
+    <span class="n1">Dhivakar</span>
+    <span class="amp">&amp;</span>
+    <span class="n2">Vishnu Priya</span>
+  </div>
+
+  <p class="invite">
+    cordially invite you to celebrate<br>their wedding ceremony
+  </p>
+
+  <div class="rule">
+    <div class="rule-line"></div>
+    <span class="rule-gem">❧</span>
+    <div class="rule-line"></div>
+  </div>
+
+  <!-- PRIMARY CTA — big gold button to jump to venues -->
+  <div class="cta-group">
+    <a href="#venues" class="btn-loc">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      View Venue Locations
+    </a>
+    <a href="#schedule" class="btn-sched">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      See Full Schedule
+    </a>
+  </div>
+
+  <div class="scue">
+    <div class="sarr"></div>
+    Scroll to explore
+  </div>
+</section>
+
+<!-- ══════════ SCHEDULE ══════════ -->
+<section class="sched-sec" id="schedule">
+  <p class="eyebrow rv">Order of Events</p>
+  <h2 class="sec-h rv">What to Expect</h2>
+  <p class="sec-p rv">Here is the full day at a glance — two occasions, two locations. You will find direction buttons on the venue cards below.</p>
+
+  <div class="tl-wrap">
+
+    <!-- Row 1: Engagement -->
+    <div class="tl-row rv">
+      <div class="tl-left">
+        <span class="tl-date">17 June 2026</span>
+        <span class="tl-time">7 PM – 8 PM</span>
+      </div>
+      <div class="tl-spine">
+        <div class="tl-dot on"></div>
+        <div class="tl-seg"></div>
+      </div>
+      <div class="tl-body">
+        <div class="tl-ename">💍 Engagement Ceremony</div>
+        <div class="tl-edesc">At <strong>Sethadevi Subramaniam Tirumana Mandapam</strong>, Krishnapuram Colony Main Rd, Madurai. Engagement ceremony followed by dinner.</div>
+      </div>
+    </div>
+
+    <!-- Row 2: Wedding Ceremony -->
+    <div class="tl-row rv" style="transition-delay:.1s">
+      <div class="tl-left">
+        <span class="tl-date">18 June 2026</span>
+        <span class="tl-time">10:30 AM – 12 PM</span>
+      </div>
+      <div class="tl-spine">
+        <div class="tl-dot on"></div>
+        <div class="tl-seg"></div>
+      </div>
+      <div class="tl-body">
+        <div class="tl-ename">🌸 Wedding Ceremony</div>
+        <div class="tl-edesc">At <strong>Arulmigu Prasanna Venkatachalapathi Temple</strong>. Sacred vows, blessings &amp; the tying of the thali.</div>
+      </div>
+    </div>
+
+    <!-- Row 3: Reception -->
+    <div class="tl-row rv" style="transition-delay:.2s">
+      <div class="tl-left">
+        <span class="tl-date">18 June 2026</span>
+        <span class="tl-time">Followed by</span>
+      </div>
+      <div class="tl-spine">
+        <div class="tl-dot"></div>
+      </div>
+      <div class="tl-body">
+        <div class="tl-ename">🍽 Reception &amp; Lunch</div>
+        <div class="tl-edesc">At <strong>Sethadevi Subramaniam Tirumana Mandapam</strong>, Krishnapuram Colony Main Rd, Madurai – 625014. Grand feast &amp; celebrations.</div>
+      </div>
+    </div>
+
+  </div><!-- /tl-wrap -->
+
+  <div class="notice rv">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    <p><strong>18 June has two locations</strong> — Ceremony at the Temple first, then Reception &amp; Lunch at the Mandapam. Tap <strong>Get Directions</strong> on each card below.</p>
+  </div>
+</section>
+
+<!-- ══════════ VENUES ══════════ -->
+<section class="venues-sec" id="venues">
+
+  <div class="venues-hdr rv">
+    <p class="eyebrow">Venue Locations</p>
+    <h2 class="sec-h">Where to Be</h2>
+    <p class="sec-p" style="margin-bottom:0">Tap the <strong style="color:var(--gold-l);font-weight:400">Get Directions</strong> button on each card — it opens Google Maps directly on your device.</p>
+  </div>
+
+  <div class="vgrid">
+
+    <!-- CARD 1 — Engagement (17 June) -->
+    <div class="vc rv">
+      <div class="vc-bar"></div>
+      <div class="vc-badge">Stop 01</div>
+      <div class="vc-in">
+        <div class="vc-tag"><div class="tdot"></div>17 June · Engagement</div>
+        <div class="vic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="5"/><circle cx="15" cy="12" r="5"/><path d="M12 7 L12 5 L14 3" stroke-width="1.2"/></svg>
+        </div>
+        <h3 class="vc-title">Sethadevi Subramaniam<br>Tirumana Mandapam</h3>
+        <p class="vc-sub">Tuesday, 17 June 2026 · 7 PM – 8 PM</p>
+        <div class="vc-rule"></div>
+        <div class="ir">
+          <div class="ir-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div class="ir-t"><span class="ir-lbl">Venue</span>Sethadevi Subramaniam Tirumana Mandapam, Krishnapuram Colony Main Rd, Madurai – 625014</div>
+        </div>
+        <div class="ir">
+          <div class="ir-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <div class="ir-t"><span class="ir-lbl">When to arrive</span>Please arrive by 6:45 PM · Ceremony begins at 7:00 PM · Dinner follows</div>
+        </div>
+        <a href="https://maps.app.goo.gl/VcwPzWSNyX3P7KKH7" target="_blank" class="mbutton">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Get Directions — Engagement
+        </a>
+        <p class="mhint">Tap to open Google Maps</p>
+      </div>
+    </div>
+
+    <!-- CARD 2 — Temple Wedding (18 June) -->
+    <div class="vc rv" style="transition-delay:.12s">
+      <div class="vc-bar"></div>
+      <div class="vc-badge">Stop 02</div>
+      <div class="vc-in">
+        <div class="vc-tag"><div class="tdot"></div>18 June · Wedding Ceremony</div>
+        <div class="vic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L12 6"/><path d="M10 4 L14 4"/><path d="M5 8 L12 5 L19 8 L19 22 L5 22 Z"/><rect x="9" y="14" width="6" height="8"/><rect x="6" y="10" width="3" height="4" rx="1.5"/><rect x="15" y="10" width="3" height="4" rx="1.5"/></svg>
+        </div>
+        <h3 class="vc-title">Arulmigu Prasanna<br>Venkatachalapathi Temple</h3>
+        <p class="vc-sub">Wednesday, 18 June 2026 · 10:30 AM – 12:00 PM</p>
+        <div class="vc-rule"></div>
+        <div class="ir">
+          <div class="ir-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div class="ir-t"><span class="ir-lbl">When to arrive</span>Please be seated by <strong>10:15 AM</strong>.<br>Ceremony begins at 10:30 AM.</div>
+        </div>
+        <div class="ir">
+          <div class="ir-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div class="ir-t"><span class="ir-lbl">Venue</span>Arulmigu Prasanna Venkatachalapathi Temple</div>
+        </div>
+        <div class="ir">
+          <div class="ir-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <div class="ir-t"><span class="ir-lbl">Occasion</span>Sacred wedding ceremony, vows &amp; thali tying</div>
+        </div>
+        <a href="https://maps.app.goo.gl/uqGQ2PR6XY3jjwa57" target="_blank" class="mbutton">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Get Directions — Temple
+        </a>
+        <p class="mhint">Tap to open Google Maps</p>
+      </div>
+    </div>
+
+    <!-- CARD 3 — Mandapam Reception (18 June) FULL WIDTH -->
+    <div class="vc rv span-full" style="transition-delay:.22s">
+      <div class="vc-bar"></div>
+      <div class="vc-badge">Stop 03</div>
+      <div class="vc-in">
+        <div class="vc-tag"><div class="tdot"></div>18 June · Reception &amp; Lunch</div>
+        <div class="vic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8 L12 3 L22 8 L22 21 L2 21 Z"/><rect x="8" y="13" width="8" height="8"/><rect x="3" y="10" width="4" height="5" rx=".5"/><rect x="17" y="10" width="4" height="5" rx=".5"/><circle cx="12" cy="7" r="1.2" fill="#c9a84c"/><line x1="12" y1="8.2" x2="11" y2="11" stroke-width=".8"/><line x1="12" y1="8.2" x2="12" y2="11" stroke-width=".8"/><line x1="12" y1="8.2" x2="13" y2="11" stroke-width=".8"/></svg>
+        </div>
+        <h3 class="vc-title">Sethadevi Subramaniam Tirumana Mandapam</h3>
+        <p class="vc-sub">Wednesday, 18 June 2026 · Followed by Wedding Ceremony</p>
+        <div class="vc-rule"></div>
+        <div class="ir">
+          <div class="ir-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div class="ir-t">
+            <span class="ir-lbl">Full Address</span>
+            Sethadevi Subramaniam Tirumana Mandapam<br>
+            Krishnapuram Colony Main Rd, Madurai – 625014
+          </div>
+        </div>
+        <div class="ir">
+          <div class="ir-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div>
+          <div class="ir-t"><span class="ir-lbl">What's included</span>Grand reception · Traditional lunch feast · Blessings &amp; celebrations</div>
+        </div>
+        <a href="https://maps.app.goo.gl/VcwPzWSNyX3P7KKH7" target="_blank" class="mbutton">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Get Directions — Mandapam
+        </a>
+        <p class="mhint">Tap to open Google Maps</p>
+      </div>
+    </div>
+
+  </div><!-- /vgrid -->
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer rv">
+  <div class="f-heart">♥</div>
+  <p class="f-script">Dhivakar &amp; Vishnu Priya</p>
+  <p class="f-msg">
+    With all our love and gratitude,<br>
+    we cannot wait to celebrate with you.<br>
+    <em>See you on 17 &amp; 18 June 2026!</em>
+  </p>
+  <p class="f-copy">© 2026 · All Rights Reserved</p>
+</footer>
+
+</div><!-- /pg -->
+
+<script>
+// ─── petals ───────────────────────────────────
+(function(){
+  const c=document.getElementById('cvs'),ctx=c.getContext('2d');
+  let W,H,ps=[];
+  function rs(){W=c.width=innerWidth;H=c.height=innerHeight}
+  addEventListener('resize',rs);rs();
+  function mk(i){return{x:Math.random()*W,y:i?Math.random()*H:-12,r:Math.random()*4+1.5,vy:Math.random()*.45+.12,vx:(Math.random()-.5)*.28,rot:Math.random()*Math.PI*2,rs:(Math.random()-.5)*.012,a:Math.random()*.2+.03,t:Math.floor(Math.random()*3),w:Math.random()*Math.PI*2,ws:Math.random()*.018+.003}}
+  for(let i=0;i<55;i++)ps.push(mk(true));
+  function fr(){
+    ctx.clearRect(0,0,W,H);
+    ps.forEach(p=>{
+      p.w+=p.ws;p.x+=p.vx+Math.sin(p.w)*.22;p.y+=p.vy;p.rot+=p.rs;
+      if(p.y>H+18)Object.assign(p,mk(false),{x:Math.random()*W});
+      ctx.save();ctx.globalAlpha=p.a;ctx.translate(p.x,p.y);ctx.rotate(p.rot);
+      if(p.t===0){ctx.fillStyle='#c9a84c';ctx.beginPath();ctx.ellipse(0,-p.r,p.r*.38,p.r*.82,0,0,Math.PI*2);ctx.fill()}
+      else if(p.t===1){ctx.fillStyle='#e8d08a';ctx.beginPath();ctx.arc(0,0,p.r*.45,0,Math.PI*2);ctx.fill()}
+      else{ctx.strokeStyle='#c9a84c';ctx.lineWidth=.5;ctx.beginPath();ctx.arc(0,0,p.r,0,Math.PI*2);ctx.stroke()}
+      ctx.restore();
+    });
+    requestAnimationFrame(fr);
+  }
+  fr();
+})();
+
+// ─── scroll reveal ────────────────────────────
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')}),{threshold:.08});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// ─── anchor buttons: smooth scroll + instant reveal ───
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const target=document.querySelector(this.getAttribute('href'));
+    if(!target)return;
+    e.preventDefault();
+    target.querySelectorAll('.rv').forEach(el=>el.classList.add('in'));
+    target.classList.add('in');
+    target.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});
+</script>
+</body>
+</html>
